@@ -179,7 +179,7 @@ a:hover {
     transform: rotate(360deg);
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1500px) {
     .box {
         width: 300px;
         height: 330px;
@@ -188,7 +188,7 @@ a:hover {
 }
 
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .hero {
         padding: 70px 40px 30px 40px;
     }
@@ -196,6 +196,10 @@ a:hover {
     .box {
         width: 300px;
         height: 330px;
+    }
+
+    .box_head {
+        line-height: 0px;
     }
 
     .hero .main_title {
@@ -218,10 +222,12 @@ a:hover {
     }
 }
 
-@media (max-width: 480px) {
+
+@media only screen and (max-width: 480px) {
     body {
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
 
     .hero {
@@ -246,8 +252,6 @@ a:hover {
     
     .container-2 {
         padding: 0px;
-        position: absolute;
-        bottom: 30px;
     }
 }
 
