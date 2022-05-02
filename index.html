@@ -5,81 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try New!</title>
+    <title>Exploring New Try</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container-1">
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li>
+<body class="body">
+    <main class="d-flex flex-lg-row flex-column justify-content-between row">
+        <div class="d-block col-sm-6 col-12 p-sm-3 px-3">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navBar">
+                <div class="container-fluid">
                     <ion-icon name="search-outline"></ion-icon>
-                </li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Stories</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1 class="main_title">It's never too late to try something new</h1>
-            <p class="hero_lead">Three paths lead to knowledge: the path of reflection is the nobiest, the path of
-                imtation is the easiet, and the path of the experience is the bitterest</p>
-        </div>
-        <button type="button" class="my_btn">Book Now</button>
-
-    </div>
-
-    <div class="container-2">
-        <div>
-            <div class="box box1">
-                <div class="box_nav">
-                    <ion-icon name="eye-outline"></ion-icon>
-                    <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="navlink ps-3" href="#">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navlink ps-3" href="#">Stores</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="box_content">
-                    <h1 class="box_head">Explore</h1>
-                    <p class="box_lead">Explore the best places deals</p>
-                </div>
-            </div>
-            <div class="box box3">
-                <div class="box_nav" style="color:#878edb">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
-                </div>
-                <div class="box_content" style="color: #878edb">
-                    <h1 class="box_head">About</h1>
-                    <p class="box_lead">Our company history</p>
-                </div>
+            </nav>
+            <div class="container-fluid" id="hero">
+                <h1 class="head">
+                    It's never too late to try something new
+                </h1>
+                <p class="lead">Three paths lead to knowlegde: the path of reflection is the noblest, the path of
+                    imitation is the easiest, and the path of experience is the bitterest.</p>
+                <button class="my_btn">Book Now</button>
             </div>
         </div>
 
-        <div>
-            <div class="box box2">
-                <div class="box_nav">
-                    <ion-icon name="sparkles-outline"></ion-icon>
-                    <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+        <div class="container col-12 col-sm-6 px-4" id="box-content">
+            <div class="row align-items-center align-items-sm-center p-sm-3 px-2">
+                <div class="col-6 box" id="box1">
+                    <div class="box_nav">
+                        <ion-icon name="eye-outline"></ion-icon>
+                        <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="box_content">
+                        <h1 class="box_head">Explore</h1>
+                        <p class="box_lead">Explore the best places deals</p>
+                    </div>
                 </div>
-                <div class="box_content">
-                    <h1 class="box_head">Stories</h1>
-                    <p class="box_lead">Our customer & company stories</p>
+                <div class="col-6 box" id="box2">
+                    <div class="box_nav">
+                        <ion-icon name="sparkles-outline"></ion-icon>
+                        <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="box_content">
+                        <h1 class="box_head">Stories</h1>
+                        <p class="box_lead">Our customer & company stories</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box box4">
-                <div class="box_nav">
-                    <ion-icon name="information-outline"></ion-icon>
-                    <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                <div class="col-6 box" id="box3">
+                    <div class="box_nav">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="box_content" style="color: #878edb">
+                        <h1 class="box_head">About</h1>
+                        <p class="box_lead">Our company history</p>
+                    </div>
                 </div>
-                <div class="box_content">
-                    <h1 class="box_head">Help</h1>
-                    <p class="box_lead">FAQ and Support</p>
+                <div class="col-6 box" id="box4">
+                    <div class="box_nav">
+                        <ion-icon name="information-outline"></ion-icon>
+                        <ion-icon class="arrow_keyup" name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="box_content">
+                        <h1 class="box_head">Help</h1>
+                        <p class="box_lead">FAQ and Support</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
