@@ -90,7 +90,7 @@ button.my_btn:hover {
 }
 
 .box  {
-    height: 340px;
+    height: 355px;
     width: 100%;
     position: relative;
 }
@@ -171,7 +171,7 @@ h1.box_head {
     }
 
     .box {
-        height: 180px;
+        height: 305px;
     }
 
     button.my_btn {
@@ -187,6 +187,10 @@ h1.box_head {
         font-size: 20px;
     }
 
+}
+
+@media screen only and (max-width: 768px) {
+    
 }
 
 
